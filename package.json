@@ -1,0 +1,17 @@
+{
+	"name": "hello-react",
+	"version": "0.0.0",
+	"dependencies": {
+		"react": "^16.4.0",
+		"react-dom": "^16.4.0",
+		"babel-cli": "^6.0.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1"
+	},
+	"scripts": {
+		"start": "npm run compile && npm run start-localhost && npm run start-node",
+		"compile": "babel src -d lib --presets=env,react",
+		"start-localhost": "start http://localhost:3001",
+		"start-node": "node lib/main/Main.js"
+	}
+}
